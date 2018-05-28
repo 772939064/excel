@@ -16,10 +16,11 @@ import java.util.UUID;
 @Controller
 public class ExcelController {
 
+    // http://equcjp.natappfree.cc ==>> 127.0.0.1:8080
     private static final String NATAPP_FORWARDING = "http://equcjp.natappfree.cc";
 
+    // officeApps previewUrl
     private static final String PREVIEW_URL = "http://view.officeapps.live.com/op/view.aspx?src=" + NATAPP_FORWARDING + "/upload/";
-
 
     @RequestMapping("upload")
     public String upload(MultipartFile file, HttpServletRequest request) {
